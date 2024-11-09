@@ -22,10 +22,10 @@ for i in $(seq 1 $NUM_TESTS); do
     RESULT2=$(./kpath_std < test_dag/test$i.in)
     
     # 比较结果
-    if [ "$RESULT1" == "$RESULT2" ]; then
+    if [ "$RESULT1" = "$RESULT2" ]; then
         echo "OK"
         PASSED=$((PASSED + 1))
-    elif [ "$RESULT1" > "$RESULT2" ]; then
+    elif [ "$RESULT1" -gt "$RESULT2" ]; then
         echo "OK"
         PASSED=$((PASSED + 1))
     else
