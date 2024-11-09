@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/dyl/vsocde/advance/bin/maxflow'
+relocations:     []
+...
